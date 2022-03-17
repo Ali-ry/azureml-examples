@@ -2,7 +2,7 @@ $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 description: "Basic Pipeline Job with 3 Hello World components"
 
-compute: azureml:cpu-cluster
+compute: azureml:Cluster-1-Small 
 
 jobs:
   componentA_job:
