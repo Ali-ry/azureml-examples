@@ -1,0 +1,7 @@
+name: hello-world
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - pandas
+    - numpy
