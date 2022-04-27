@@ -3,8 +3,8 @@ command: |
   echo ${{inputs.hello_string}}
   echo ${{inputs.hello_number}}
 environment:
-  image: python:latest
+  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:latest
 inputs:
-  hello_string: "hello world"
+  hello_string: "hello everyone"
   hello_number: 42
-compute: azureml:cpu-cluster
+compute: azureml:Cluster-1-Small

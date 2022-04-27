@@ -1,7 +1,7 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 command: echo $hello_env_var
 environment:
-  image: python:latest
-compute: azureml:cpu-cluster
+  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:latest
+compute: azureml:Cluster-1-Small
 environment_variables:
   hello_env_var: "hello world"
